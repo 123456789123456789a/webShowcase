@@ -1,0 +1,152 @@
+@font-face
+{
+    font-family: "montserrat";
+    src: url("../FONTS/mon.ttf");
+}
+
+*
+{
+  margin: 0px;
+  padding: 0px;
+
+  overflow: hidden;
+
+  font-family: montserrat;
+}
+
+body
+{
+  background-color: #D9D9D0;
+}
+
+.Bar2
+{
+  height: 1.5%;
+
+  border: 1px solid blue;
+  border-radius: 5px;
+
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: blue;
+
+  transition-duration: 1s;
+}
+
+.main-login
+{
+  width: 30%;
+  height: 60.09%;
+
+  background-color: #fffff5;
+
+  position: absolute;
+
+  top: 45%;
+  left: 62%;
+
+  transform: translate(-50%, -50%);
+
+  align-items: center;
+  text-align: center;
+
+  transition-duration: 1s;
+}
+
+.child-login
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: left;
+
+  height: 75%;
+  width: 75%;
+}
+
+.stock-img
+{
+  position: absolute;
+  top: 45%;
+  left: 40%;
+
+  transform: translate(-50%, -50%);
+
+  width: 40%;
+  height: 60%;
+
+  transition-duration: 1s;
+}
+
+@media only screen and (max-width: 1050px)
+{
+  .main-login
+  {
+    width: 50%;
+    height: 40.09%;
+  }
+
+  .stock-img
+  {
+    width: 50%;
+    height: 40%;
+  }
+}
+
+.login
+{
+  transition-duration: 2s;
+
+  opacity: 0;
+
+  width: 30%;
+  height: 60%;
+}
+
+.inpText
+{
+  font-weight: bold;
+
+  border: none;
+
+  width: 75%;
+  height: 10%;
+}
+
+.inpText
+{
+  outline: none;
+}
+
+.inpBorder
+{
+  height: 2px;
+  width: 2%;
+
+  background: linear-gradient(to right, red, #fffff5);
+
+  border-radius: 4px;
+
+  margin: 0;
+
+  opacity: 0;
+
+  transition: .5s ease;
+}
+
+.inpText:focus ~ .inpBorder
+{
+  opacity: 1;
+
+  width: 100%;
+}
+
+.inpCheck:focus
+{
+  outline: none;
+}
